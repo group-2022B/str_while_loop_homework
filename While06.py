@@ -7,4 +7,9 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    count = 0
+    while s != "":
+        if s[0].isalpha() and s[0].lower() not in "aeiou":
+            count += 1
+        s = s[1:]
+    return count
