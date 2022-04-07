@@ -6,4 +6,9 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    count = 0
+    while s != "":
+        if s[0] in ".,:;!?":
+            count += 1
+        s = s[1:]
+    return count

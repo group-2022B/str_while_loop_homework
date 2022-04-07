@@ -6,4 +6,8 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    count = 0
+    while s != "":
+        count += int(s[0])
+        s = s[1:]
+    return count

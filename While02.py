@@ -6,4 +6,8 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    count = 0
+    while s != "":
+        if s[0].isalpha():
+            count += 1
+        s = s[1:]
