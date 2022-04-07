@@ -11,3 +11,4 @@ def main(s):
         if s[0].isdigit():
             count += 1
         s = s[1:]
+    return count

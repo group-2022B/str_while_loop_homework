@@ -8,7 +8,7 @@ def main(s):
     """
     count = 0
     while s != "":
-        if s[0] in ".,:;!?":
+        if s[0].isalpha() == False and s[0].isdigit() == False:
             count += 1
         s = s[1:]
     return count
